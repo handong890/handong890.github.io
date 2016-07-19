@@ -1,0 +1,227 @@
+<html>
+<head>
+ <meta charset="UTF-8">   
+<title>税务预警</title>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+ FusionCharts.ready(function () {
+    var constructionPlan = new FusionCharts({
+        type: 'dragnode',
+        renderAt: 'chart-container',
+        width: '100%',
+        height: '100%',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "税务流向回路预警",                                
+                "arrowatstart": "0",
+                "arrowatend": "1",
+                "viewMode": "1",
+                "showCanvasBorder": "0",
+                "showXAxisLine" : "0",
+                "bgColor":"#ffffff",
+                "showBorder": "0",
+                "paletteColors": "#0075c2",
+                "baseFontColor": "#000000",                
+                "baseFont": "Helvetica Neue,Arial",
+                "captionFontSize": "14",
+                "captionFontColor": "#333333",
+                "btnTextColor": "#333333",
+                "showPlotBorder": "0",
+                "toolTipColor": "#ffffff",
+                "toolTipBorderThickness": "0",
+                "toolTipBgColor": "#000000",
+                "toolTipBgAlpha": "80",
+                "toolTipBorderRadius": "2",
+                "toolTipPadding": "5",
+                "connectorToolText": "$label"
+            },            
+            "dataset": [
+                {
+                    "id": "1",
+                    "seriesname": "DS1",
+                    "data": [
+                        {
+                    "id": "2",
+                    "x": "12",
+                    "y": "36",
+                    "width": "110",
+                    "height": "90",
+                    "name": "神马科技有限公司",
+                    "color": "FE3233",
+                    "imagenode": "1",
+                    "imageurl": "1.png",
+                    "labelalign": "top",
+                    "imagealign": "middle",
+                    "alpha": "0",
+                    "imagewidth": "80",
+                    "imageheight": "100",
+                    "tooltext": "购方企业: 神马科技有限公司 \r\n 报税时间:2013-01-05",
+                    "allowdrag": "1"
+                        },
+                        {
+                            "id": "3",
+                            "x": "25",
+                            "y": "36",
+                             "width": "110",
+                    "height": "90",
+                    "name": "宏泰股份有限公司",
+                    "color": "FE3233",
+                    "imagenode": "1",
+                    "imageurl": "1.png",
+                    "labelalign": "top",
+                    "imagealign": "middle",
+                    "alpha": "0",
+                    "imagewidth": "80",
+                    "imageheight": "100",
+                    "tooltext": "购方企业: 宏泰股份有限公司 \r\n 报税时间:2013-02-05",
+                    "allowdrag": "1"
+                        },
+                        {
+                            "id": "4",
+                            "x": "35",
+                            "y": "36",
+                              "width": "110",
+                    "height": "90",
+                    "name": "一盒股份有限公司",
+                    "color": "FE3233",
+                    "imagenode": "1",
+                    "imageurl": "1.png",
+                    "labelalign": "top",
+                    "imagealign": "middle",
+                    "alpha": "0",
+                    "imagewidth": "80",
+                    "imageheight": "100",
+                    "tooltext": "购方企业: 一盒股份有限公司 \r\n 报税时间:2013-02-05",
+                    "allowdrag": "1"
+                        },
+                        {
+                            "id": "5",
+                            "x": "45",
+                            "y": "40",
+                                "width": "110",
+                    "height": "90",
+                    "name": "太阳股份有限公司",
+                    "color": "FE3233",
+                    "imagenode": "1",
+                    "imageurl": "1.png",
+                    "labelalign": "top",
+                    "imagealign": "middle",
+                    "alpha": "0",
+                    "imagewidth": "80",
+                    "imageheight": "100",
+                    "tooltext": "购方企业: 太阳股份有限公司 \r\n 报税时间:2013-02-05",
+                    "allowdrag": "1"
+                        },
+                        {
+                            "id": "6",
+                            "x": "55",
+                            "y": "40",
+                               "width": "110",
+                    "height": "90",
+                    "name": "天地股份有限公司",
+                    "color": "FE3233",
+                    "imagenode": "1",
+                    "imageurl": "1.png",
+                    "labelalign": "top",
+                    "imagealign": "middle",
+                    "alpha": "0",
+                    "imagewidth": "80",
+                    "imageheight": "100",
+                    "tooltext": "购方企业: 天地股份有限公司 \r\n 报税时间:2013-02-05",
+                    "allowdrag": "1"
+                        },
+                        {
+                            "id": "7",
+                            "x": "35",
+                            "y": "22",
+                               "width": "110",
+                    "height": "90",
+                    "name": "回路预警示例股份有限公司",
+                    "color": "FE3233",
+                    "imagenode": "1",
+                    "imageurl": "1.png",
+                    "labelalign": "top",
+                    "imagealign": "middle",
+                    "alpha": "0",
+                   "imagewidth": "80",
+                    "imageheight": "100",
+                    "tooltext": "购方企业: 回路预警示例股份有限公司 \r\n 报税时间:2013-02-05",
+                    "allowdrag": "1"
+                        }
+                    ]
+                }
+            ],
+            "connectors": [
+                {
+                    "stdthickness": "2",
+                    "connector": [
+                        {
+                            "from": "2",
+                            "to": "3",
+                            "color": "#1aaf5d",
+                            "strength": "1",
+                            "arrowatstart": "0",
+                            "alpha": "100",
+                            "label": "金额 200,100 \n 税额 10,000"
+                        },
+                          {
+                            "from": "3",
+                            "to": "4",
+                            "color": "#1aaf5d",
+                            "strength": "1",
+                            "arrowatstart": "0",
+                            "alpha": "100",
+                            "label": "金额 400,100 \n 税额 20,000"
+                        },
+                          {
+                            "from": "4",
+                            "to": "5",
+                            "color": "#1aaf5d",
+                            "strength": "1",
+                            "arrowatstart": "0",
+                            "alpha": "100",
+                            "label": "金额 400,100 \n 税额 20,000"
+                        },
+                          {
+                            "from": "5",
+                            "to": "6",
+                            "color": "#1aaf5d",
+                            "strength": "1",
+                            "arrowatstart": "0",
+                            "alpha": "100",
+                            "label": "金额 400,100 \n 税额 20,000"
+                        },
+                          {
+                            "from": "3",
+                            "to": "7",
+                            "color": "#FF0000",
+                            "strength": "1",
+                            "arrowatstart": "0",
+                            "alpha": "100",
+                            "label": "金额 400,100 \n 税额 20,000"
+                        },
+                          {
+                            "from": "7",
+                            "to": "2",
+                            "color": "#FF0000",
+                            "strength": "1",
+                            "arrowatstart": "0",
+                            "alpha": "100",
+                            "label": "金额 400,100 \n 税额 20,000"
+                        }
+                    ]
+                }
+            ]
+        }                
+    }).render();
+});
+
+window.setTimeout("$('.raphael-group-127-creditgroup').hide()",1000);
+</script>
+</head>
+<body>
+  <div id="chart-container"></div>
+</body>
+</html>
